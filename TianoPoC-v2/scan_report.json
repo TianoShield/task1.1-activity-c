@@ -1,0 +1,207 @@
+[
+  {
+    "ghsa_id": "GHSA-vx5v-4gg6-6qxr",
+    "cve_id": "CVE-2025-3770",
+    "fix_commit": "d2d8d38ee08c5e602fb092f940dfecc1f5a4eb38",
+    "targets": [
+      {
+        "package": "UefiCpuPkg",
+        "module": "PiSmmCpuDxeSmm",
+        "changed_source_files": [
+          "UefiCpuPkg/PiSmmCpuDxeSmm/X64/SmiEntry.nasm"
+        ],
+        "known_stack": false,
+        "dependency_chain": [],
+        "suggested_depth": "L1",
+        "existing_harnesses": [],
+        "has_coverage": false
+      }
+    ],
+    "action": "generate"
+  },
+  {
+    "ghsa_id": "GHSA-p7wp-52j7-6r5x",
+    "cve_id": "CVE-2024-38805",
+    "fix_commit": "b3a2f7ff24e156e8c4d694fffff01e95a048c536",
+    "targets": [
+      {
+        "package": "NetworkPkg",
+        "module": "IScsiDxe",
+        "changed_source_files": [
+          "NetworkPkg/IScsiDxe/IScsiProto.c"
+        ],
+        "known_stack": false,
+        "dependency_chain": [],
+        "suggested_depth": "L1",
+        "existing_harnesses": [
+          "NetworkPkg/IScsiDxe/TestIScsiDriver/TestIScsiDriver.inf",
+          "NetworkPkg/IScsiDxe/TestIScsiDriverL1L2Deep/TestIScsiDriverL1L2Deep.inf"
+        ],
+        "has_coverage": true
+      }
+    ],
+    "action": "already_covered"
+  },
+  {
+    "ghsa_id": "GHSA-q2c6-37h5-7cwf",
+    "cve_id": "CVE-2024-38798",
+    "fix_commit": "ab04d09555b91037b8463ea5fb4387f16a5a5015",
+    "targets": [
+      {
+        "package": "EmbeddedPkg",
+        "module": "VirtualKeyboardDxe",
+        "changed_source_files": [
+          "EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboard.c"
+        ],
+        "known_stack": false,
+        "dependency_chain": [],
+        "suggested_depth": "L1",
+        "existing_harnesses": [],
+        "has_coverage": false
+      }
+    ],
+    "action": "generate"
+  },
+  {
+    "ghsa_id": "GHSA-6pp6-cm5h-86g5",
+    "cve_id": "CVE-2025-2296",
+    "fix_commit": "35232f165cba2314cb4af2e0a5aa2fbb23695a0a",
+    "targets": [],
+    "action": "no_edk2_files"
+  },
+  {
+    "ghsa_id": "GHSA-4wjw-6xmf-44xf",
+    "cve_id": "CVE-2024-38797",
+    "fix_commit": "d79d8d6a8dc3b7324b167031c89400390261acf3",
+    "targets": [],
+    "action": "no_edk2_files"
+  },
+  {
+    "ghsa_id": "GHSA-xpcr-7hjq-m6qm",
+    "cve_id": "CVE-2024-38796",
+    "fix_commit": "c95233b8525ca6828921affd1496146cff262e65",
+    "targets": [
+      {
+        "package": "MdePkg",
+        "module": "BasePeCoffLib",
+        "changed_source_files": [
+          "MdePkg/Library/BasePeCoffLib/BasePeCoff.c"
+        ],
+        "known_stack": false,
+        "dependency_chain": [],
+        "suggested_depth": "L1",
+        "existing_harnesses": [
+          "MdePkg/BasePeCoffLib/TestPeCoff/TestPeCoff.inf"
+        ],
+        "has_coverage": true
+      }
+    ],
+    "action": "already_covered"
+  },
+  {
+    "ghsa_id": "GHSA-chfw-xj8f-6m53",
+    "cve_id": "CVE-2024-1298",
+    "fix_commit": "c95233b8525ca6828921affd1496146cff262e65",
+    "targets": [
+      {
+        "package": "MdePkg",
+        "module": "BasePeCoffLib",
+        "changed_source_files": [
+          "MdePkg/Library/BasePeCoffLib/BasePeCoff.c"
+        ],
+        "known_stack": false,
+        "dependency_chain": [],
+        "suggested_depth": "L1",
+        "existing_harnesses": [
+          "MdePkg/BasePeCoffLib/TestPeCoff/TestPeCoff.inf"
+        ],
+        "has_coverage": true
+      }
+    ],
+    "action": "already_covered"
+  },
+  {
+    "ghsa_id": "GHSA-5xcf-j538-p769",
+    "cve_id": "CVE-2024-00000",
+    "fix_commit": null,
+    "targets": [],
+    "action": "unresolvable"
+  },
+  {
+    "ghsa_id": "GHSA-hc6x-cw6p-gj7h",
+    "cve_id": "CVE-2023-45229",
+    "fix_commit": "5fd3078a2e08f607dc86a16c1b184b6e30a34a49",
+    "targets": [],
+    "action": "no_edk2_files"
+  },
+  {
+    "ghsa_id": "GHSA-8522-69fh-w74x",
+    "cve_id": "CVE-2025-2295",
+    "fix_commit": "17cdc512f02a2dfd1b9e24133da56fdda099abda",
+    "targets": [
+      {
+        "package": "NetworkPkg",
+        "module": "IScsiDxe",
+        "changed_source_files": [
+          "NetworkPkg/IScsiDxe/IScsiProto.c"
+        ],
+        "known_stack": false,
+        "dependency_chain": [],
+        "suggested_depth": "L1",
+        "existing_harnesses": [
+          "NetworkPkg/IScsiDxe/TestIScsiDriver/TestIScsiDriver.inf",
+          "NetworkPkg/IScsiDxe/TestIScsiDriverL1L2Deep/TestIScsiDriverL1L2Deep.inf"
+        ],
+        "has_coverage": true
+      }
+    ],
+    "action": "already_covered"
+  },
+  {
+    "ghsa_id": "GHSA-ch4w-v7m3-g8wx",
+    "cve_id": "CVE-2022-36765",
+    "fix_commit": "9a75b030cf27d2530444e9a2f9f11867f79bf679",
+    "targets": [
+      {
+        "package": "StandaloneMmPkg",
+        "module": "StandaloneMmCoreHobLib",
+        "changed_source_files": [
+          "StandaloneMmPkg/Library/StandaloneMmCoreHobLib/Arm/StandaloneMmCoreHobLib.c"
+        ],
+        "known_stack": false,
+        "dependency_chain": [],
+        "suggested_depth": "L1",
+        "existing_harnesses": [],
+        "has_coverage": false
+      }
+    ],
+    "action": "generate"
+  },
+  {
+    "ghsa_id": "GHSA-4hcq-p8q8-hj8j",
+    "cve_id": "CVE-2022-36764",
+    "fix_commit": "8f6d343ae639fba8e4b80e45257275e23083431f",
+    "targets": [],
+    "action": "no_edk2_files"
+  },
+  {
+    "ghsa_id": "GHSA-xvv8-66cq-prwr",
+    "cve_id": "CVE-2022-36763",
+    "fix_commit": "65cacd6fcd44423d0cc264b908030b5b329726fa",
+    "targets": [
+      {
+        "package": "SecurityPkg",
+        "module": "DxeTpmMeasureBootLib",
+        "changed_source_files": [
+          "SecurityPkg/Library/DxeTpmMeasureBootLib/DxeTpmMeasureBootLib.c"
+        ],
+        "known_stack": false,
+        "dependency_chain": [],
+        "suggested_depth": "L1",
+        "existing_harnesses": [],
+        "has_coverage": false
+      }
+    ],
+    "action": "generate"
+  }
+]
