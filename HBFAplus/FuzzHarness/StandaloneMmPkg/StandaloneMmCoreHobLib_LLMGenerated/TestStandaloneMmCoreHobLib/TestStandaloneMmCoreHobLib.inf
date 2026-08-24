@@ -1,0 +1,38 @@
+## @file TestStandaloneMmCoreHobLib.inf
+#
+#  Fuzz harness for MdeModulePkg/Library/StandaloneMmCoreHobLib.
+#
+#  This module provides a minimal test harness for StandaloneMmCoreHobLib,
+#  which is a library used in UEFI firmware to manage core HOBs. The objective 
+#  is to trigger potential bugs in the library by feeding it fuzzer-controlled input 
+#  without adding any defensive checks.
+#
+#  Bug class: Integer overflow, incorrect data handling, etc.
+#
+#  Copyright (c) 2024 TianoShield Contributors.
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = TestStandaloneMmCoreHobLib
+  FILE_GUID      = 7D3E8F4A-5C6B-489D-B2F2-F3A89C4D5E1A
+  MODULE_TYPE    = USER_DEFINED
+  VERSION_STRING = 1.0
+
+[Sources]
+  TestStandaloneMmCoreHobLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  HBFAplus/HBFAplus.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  DebugLib
+  UefiBootServicesTableLib
+  FuzzContextLib
+  ToolChainHarnessLib

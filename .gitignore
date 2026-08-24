@@ -1,0 +1,25 @@
+# Secrets — never commit
+.env
+*.env
+
+# OS junk
+.DS_Store
+
+# Backup files created during manual edits this session
+*.bak
+*.before_*
+
+# Local scratch archives
+*.tar.gz
+
+# Generated pipeline output (results, not source)
+output/
+
+# Duplicate/scratch edk2 checkout used for testing (separate from the edk2/ submodule)
+edk2-upstream/
+
+# Cached wiki clone (has its own .git, shouldn't be nested)
+HBFAplus/Tools/AdvisoryPipeline/.wiki_cache/
+
+# GitHub CLI / scan output (regenerable)
+HBFAplus/Tools/AdvisoryPipeline/scan_report.json

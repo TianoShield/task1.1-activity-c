@@ -1,0 +1,41 @@
+## @file TestIScsiDriver.inf
+#  Component-level fuzz harness for IScsiDxe.
+#
+#  Copyright (c) 2023, HBFAplus Contributors. All rights reserved.
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = TestIScsiDriver
+  FILE_GUID      = A3B7D2E1-9C4F-4A6B-8E5D-1F2C3D4E5F6A
+  MODULE_TYPE    = USER_DEFINED
+  VERSION_STRING = 1.0
+
+[Sources]
+  TestIScsiDriver.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  CryptoPkg/CryptoPkg.dec
+  NetworkPkg/NetworkPkg.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  MemoryAllocationLib
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  UefiLib
+  NetLib
+  PrintLib
+  DevicePathLib
+  SafeIntLib
+  FuzzContextLib
+  HostDispatcherLib
+  ToolChainHarnessLib
+
+[Protocols]
+  gEfiTcp4ProtocolGuid
+  gEfiTcp4ServiceBindingProtocolGuid

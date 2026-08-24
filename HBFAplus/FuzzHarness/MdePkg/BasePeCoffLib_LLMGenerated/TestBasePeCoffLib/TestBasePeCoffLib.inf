@@ -1,0 +1,44 @@
+## @file TestBasePeCoffLib.inf
+#  Fuzz harness for BasePeCoffLib.
+#
+#  Exercises BasePeCoffLib functions with fuzzer-controlled input data.
+#
+#  Build:
+#    build -p HBFAplus/HBFAplus.dsc \
+#          -m HBFAplus/FuzzHarness/MdePkg/BasePeCoffLib/TestBasePeCoffLib/TestBasePeCoffLib.inf \
+#          -a X64 -t AFL
+#
+#  Run:
+#    afl-fuzz -i HBFAplus/Seed/MdePkg/BasePeCoffLib/TestBasePeCoffLib/Raw \
+#             -o /tmp/testbasepecofflib_out -- \
+#             ./Build/HBFAplusPkg/DEBUG_AFL/X64/TestBasePeCoffLib @@
+#
+#  Copyright (c) 2023, HBFAplus Contributors. All rights reserved.
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = TestBasePeCoffLib
+  FILE_GUID                      = ABCDEF12-3456-7890-ABCD-EF1234567891
+  MODULE_TYPE                    = USER_DEFINED
+  VERSION_STRING                 = 1.0
+
+[Sources]
+  TestBasePeCoffLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  HBFAplus/HBFAplus.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  DebugLib
+  UefiBootServicesTableLib
+  UefiRuntimeServicesTableLib
+  PeCoffLib
+  SafeIntLib
+  ToolChainHarnessLib
