@@ -99,6 +99,20 @@ The pipeline's full infrastructure, advisory resolution, target mapping, harness
 
 Results are expected to improve with a stronger model. `HBFA_LLM_MODEL` is a plain environment variable, so swapping models requires no code changes.
 
+## Contributing
+
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to
+propose changes, coding conventions, and how to report bugs.
+
+## Security
+
+TianoPoC only targets already publicly disclosed GitHub Security
+Advisories. If you find a security issue in this repository's own code
+(e.g. leaked credentials, unsafe handling of LLM output), please do **not**
+open a public issue — see [SECURITY.md](SECURITY.md) for how to report it
+privately. If you discover a *new, undisclosed* EDK2 vulnerability, report
+it through TianoCore's own process.
+
 
 ## License
 
